@@ -19,14 +19,14 @@ export default function DetailsPage() {
             formData[key] = value;
         }
 
-        setTimeout(() =>{}, 500)
-
-        if (submitAPI(formData)) {
-            navigate("/confirmation");
-        } else {
-            alert('Submission failed! please retry!')
-            navigate("/reservations");
-        }
+        setTimeout(() =>{
+            if (submitAPI(formData)) {
+                navigate("/confirmation");
+            } else {
+                alert('Submission failed! please retry!')
+                navigate("/reservations");
+            }
+        }, 300)
     }
 
     if (!location.search) return (<Navigate to='/' />)
