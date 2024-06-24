@@ -151,13 +151,18 @@ footer > small {
 }
 
 .confirmation-container {
-  height: 10rem;
-  width: 15rem;
+  height: 20rem;
+  width: 17.5rem;
   border-radius: 16px;
   box-shadow: 2px 2px 2px rgb(54, 77, 54);
   padding: 1.5rem 0rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.confirmation-container > h2 {
+  margin: 0 1rem;
 }

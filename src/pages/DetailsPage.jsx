@@ -26,7 +26,7 @@ export default function DetailsPage() {
                 alert('Submission failed! please retry!')
                 navigate("/reservations");
             }
-        }, 300)
+        }, 500)
     }
 
     if (!location.search) return (<Navigate to='/' />)
