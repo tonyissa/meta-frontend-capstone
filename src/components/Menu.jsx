@@ -8,7 +8,7 @@ export default function Menu() {
             <div className="menu">
                 {sampleMenu.map(item => {
                     return (
-                        <div className="item-container">
+                        <div className="item-container" key={item.key}>
                             <img src={item.img} alt="" />
                             <div>{item.title}</div>
                             <p>{item.description}</p>
