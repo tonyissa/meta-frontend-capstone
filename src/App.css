@@ -22,10 +22,6 @@ nav > a:hover {
   color: rgb(98, 132, 121);
 }
 
-main {
-  height: 100vh;
-}
-
 .hero {
   height: 50vh;
   background-color: rgb(73, 94, 87);
@@ -35,7 +31,7 @@ main {
 }
 
 .hero > img {
-  width: 50%;
+  width: 20rem;
   align-self: center;
   justify-self: end;
 }
@@ -51,8 +47,37 @@ main {
   border: none;
   border-radius: 16px;
   font-weight: 700;
-  box-shadow: 1px 2px 2px rgb(33, 45, 38);
+  box-shadow: 1px 2px 1px rgb(33, 45, 38);
   cursor: pointer;
+}
+
+.hero-text-container button:hover:active {
+  border: 1px inset rgb(38, 60, 55);
+}
+
+.menu-container {
+  padding: 2.5rem 15vw;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.item-container {
+  border: 2px solid rgb(73, 94, 87);
+  padding: .5rem;
+  width: calc(.5rem + 15vw);
+  background-color: rgb(244, 241, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.item-container img {
+  width: 15vw;
 }
 
 footer {
