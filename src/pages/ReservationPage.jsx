@@ -6,8 +6,16 @@ export default function ReservationPage() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        setTimeout(() => {}, 250);
-        navigate('/confirmation')
+        let navigationURL = "/details?"
+
+        navigationURL += `date=${e.target.date.value}`
+        navigationURL += `&time=${e.target.time.value}`
+        navigationURL += `&amount=${e.target.amount.value}`
+        navigationURL += `&seating=${e.target.seating.value}`
+        
+        if (e.target.special.value) navigationURL += `&special=${e.target.special.value}`
+
+        navigate(navigationURL)
     }
 
     return (

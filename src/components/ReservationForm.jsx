@@ -1,7 +1,7 @@
 import { fetchAPI } from '../api';
 import { useRef, useState } from 'react';
 
-export default function ReservationForm() {
+export default function Form() {
     const currentDate = useRef(new Date().toISOString().split('T')[0]);
 
     const [date, setDate] = useState(currentDate.current);
