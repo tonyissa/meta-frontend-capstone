@@ -32,7 +32,7 @@ export default function DetailsPage() {
     if (!location.search) return (<Navigate to='/' />)
 
     return (
-        <main className="reservation-page primary-1-background text-2">
+        <main className="page primary-1-background text-2">
             <h1 className="primary-2 subtitle-text">Confirm your details</h1>
             <form className='form' onSubmit={handleSubmit}>
                 <DetailsForm />
