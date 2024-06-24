@@ -40,7 +40,7 @@ nav > a:hover {
   padding-top: 1.5rem;
 }
 
-.hero-text-container button {
+button {
   margin-top: 1rem;
   width: 8rem;
   height: 2rem;
@@ -49,9 +49,10 @@ nav > a:hover {
   font-weight: 700;
   box-shadow: 1px 2px 1px rgb(33, 45, 38);
   cursor: pointer;
+  background-color: rgb(244, 206, 20);
 }
 
-.hero-text-container button:hover:active {
+button:hover:active {
   border: 1px inset rgb(38, 60, 55);
 }
 
@@ -67,9 +68,9 @@ nav > a:hover {
 
 .item-container {
   border: 2px solid rgb(73, 94, 87);
-  padding: .5rem;
+  padding: .25rem;
   width: calc(.5rem + 15vw);
-  background-color: rgb(244, 241, 241);
+  background-color: rgb(243, 240, 237);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,4 +92,21 @@ footer > small {
   align-self: center;
   justify-self: center;
   color: rgb(239, 237, 238);
+}
+
+.reservation-page {
+  height: 30rem;
+  padding: 2rem 0;
+  display: grid;
+  justify-items: center;
+}
+
+.reservation-container {
+  margin-top: 2rem;
+  height: 20rem;
+  width: 15rem;
+  border-radius: 16px;
+  box-shadow: 2px 2px 2px rgb(54, 77, 54);
+  display: flex;
+  flex-direction: column;
 }

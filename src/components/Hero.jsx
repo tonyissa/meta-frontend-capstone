@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <div className="hero">
             <div className="hero-text-container text-1 neutral-white">
-                <h1 className="title-text">Little Lemon</h1>
+                <h1 className="title-text primary-2">Little Lemon</h1>
                 <h2 className="subtitle-text">Chicago</h2>
                 <p className="lead-text">We are a family owned Mediterranean restaurant, located on Maldove Street in Chicago, Illionis. 
                 We focus on traditional recipes served with a modern twist.</p>
